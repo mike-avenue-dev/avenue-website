@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F8F5F0"/>
+  <circle cx="945" cy="315" r="240" fill="#E85D24"/>
+  <g fill="#E85D24" transform="translate(90 80) skew(-10)">
+    <rect x="0" y="55" width="24" height="44" rx="6"/>
+    <rect x="34" y="28" width="24" height="71" rx="6"/>
+    <rect x="68" width="24" height="99" rx="6"/>
+  </g>
+  <text x="200" y="155" font-family="Arial, sans-serif" font-size="70" font-weight="700" fill="#1A1A2E">avenue</text>
+  <text x="90" y="315" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#1A1A2E">Discover what's</text>
+  <text x="90" y="395" font-family="Georgia, serif" font-size="76" font-weight="700" font-style="italic" fill="#E85D24">happening now.</text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="26" fill="#5F5E5A">Events, activities and venues across Limassol.</text>
+</svg>
