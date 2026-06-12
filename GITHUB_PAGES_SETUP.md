@@ -262,12 +262,13 @@ The checkbox may remain unavailable while GitHub creates the TLS certificate. Th
 
 After HTTPS is active, test:
 
-- `https://avenuecy.com`
+- `https://avenuecy.com/home`
 - `https://www.avenuecy.com`
-- `https://avenuecy.com/privacy.html`
-- `https://avenuecy.com/terms.html`
-- `https://avenuecy.com/support.html`
-- `https://avenuecy.com/delete-account.html`
+- `https://avenuecy.com/home`
+- `https://avenuecy.com/privacy`
+- `https://avenuecy.com/terms`
+- `https://avenuecy.com/support`
+- `https://avenuecy.com/delete-account`
 
 ## Part 11: Publish future website changes
 
