@@ -1,13 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#F8F5F0"/>
-  <circle cx="945" cy="315" r="240" fill="#E85D24"/>
-  <g fill="#E85D24" transform="translate(90 80) skew(-10)">
-    <rect x="0" y="55" width="24" height="44" rx="6"/>
-    <rect x="34" y="28" width="24" height="71" rx="6"/>
-    <rect x="68" width="24" height="99" rx="6"/>
+  <rect width="1200" height="630" fill="#FFFFFE"/>
+  <circle cx="945" cy="315" r="240" fill="#E6F5F3"/>
+  <circle cx="1010" cy="175" r="70" fill="#FEEBE6"/>
+  <g fill="#FFFFFE" transform="translate(90 78)">
+    <rect width="104" height="104" rx="28" fill="#1AB3AD"/>
+    <rect x="19" y="19" width="28" height="28" rx="7"/>
+    <rect x="57" y="19" width="28" height="28" rx="7"/>
+    <rect x="19" y="57" width="28" height="28" rx="7"/>
+    <rect x="57" y="57" width="28" height="28" rx="7"/>
   </g>
-  <text x="200" y="155" font-family="Arial, sans-serif" font-size="70" font-weight="700" fill="#1A1A2E">avenue</text>
-  <text x="90" y="315" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#1A1A2E">Discover what's</text>
-  <text x="90" y="395" font-family="Georgia, serif" font-size="76" font-weight="700" font-style="italic" fill="#E85D24">happening now.</text>
-  <text x="90" y="500" font-family="Arial, sans-serif" font-size="26" fill="#5F5E5A">Events, activities and venues across Limassol.</text>
+  <text x="220" y="154" font-family="Arial, sans-serif" font-size="70" font-weight="700" fill="#105257">avenue</text>
+  <text x="90" y="315" font-family="Arial, sans-serif" font-size="70" font-weight="700" fill="#151528">Your city.</text>
+  <text x="90" y="395" font-family="Arial, sans-serif" font-size="70" font-weight="700" fill="#105257">Your next plan.</text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="26" fill="#62645F">Events, venues, and local plans across Limassol.</text>
 </svg>

@@ -3,231 +3,173 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Avenue helps you discover events, activities, and venues across Limassol, Cyprus.">
-    <meta name="theme-color" content="#1A1A2E">
-    <meta property="og:title" content="Avenue — Discover Limassol">
-    <meta property="og:description" content="Your city, happening now. Explore events and places across Limassol.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://avenuecy.com/">
-    <meta property="og:image" content="https://avenuecy.com/assets/og-image.svg">
+    <meta name="description" content="Avenue helps you discover events and venues across Limassol.">
+    <meta name="theme-color" content="#ffffff">
     <title>Avenue — Discover what's happening in Limassol</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="icon" href="assets/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="wireframe.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Avenue home">
-        <span class="brand-mark" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </span>
+    <header class="wf-header">
+      <a class="wf-brand" href="#top" aria-label="Avenue home">
+        <img src="assets/avenue-logo-96.png" width="96" height="96" alt="">
         <span>avenue</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Open navigation</span>
-        <span></span><span></span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#how-it-works">How it works</a>
-        <a href="#for-venues">For venues</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#download">Get the app</a>
-      </nav>
+      <a class="wf-button wf-button-small" href="mailto:info@avenuecy.com?subject=Avenue%20app%20launch">Join the launch list</a>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Limassol, all in one place</p>
-          <h1>Discover what’s<br>happening <em>now.</em></h1>
-          <p class="hero-intro">
-            Find the events, places, and moments that make Limassol feel alive.
-            Your next plan is closer than you think.
-          </p>
-          <div id="download" class="download-row">
-            <a class="app-store-button" href="mailto:info@avenuecy.com?subject=Avenue%20app%20launch" aria-label="Join the Avenue app launch list">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M18.7 12.8c0-3.2 2.6-4.7 2.7-4.8a5.8 5.8 0 0 0-4.6-2.5c-2-.2-3.8 1.2-4.8 1.2-1 0-2.5-1.2-4.2-1.1A6.1 6.1 0 0 0 2.6 8.7c-2.2 3.8-.6 9.4 1.6 12.4 1.1 1.5 2.3 3.1 3.9 3 1.6-.1 2.2-1 4.1-1s2.5 1 4.2 1c1.7 0 2.8-1.5 3.8-3a13.5 13.5 0 0 0 1.7-3.5 5.4 5.4 0 0 1-3.2-4.8ZM15.5 3.4A5.4 5.4 0 0 0 16.8-.5a5.5 5.5 0 0 0-3.6 1.9 5.2 5.2 0 0 0-1.3 3.7 4.6 4.6 0 0 0 3.6-1.7Z" transform="scale(.82) translate(2.2 1.2)"/>
+      <section class="wf-hero wf-container">
+        <div class="wf-hero-copy">
+          <p class="wf-label">Event discovery for Limassol</p>
+          <h1>Find a plan without searching everywhere.</h1>
+          <p class="wf-lead">Avenue puts local events and venues on one map, so you can understand what is happening and decide where to go.</p>
+          <a class="wf-button" href="mailto:info@avenuecy.com?subject=Avenue%20app%20launch">Join the launch list</a>
+          <p class="wf-note">Coming soon to iPhone. No spam.</p>
+        </div>
+
+        <div class="wf-product" aria-label="Wireframe of the Avenue app">
+          <div class="wf-product-bar">
+            <span>Limassol</span>
+            <span>Map view</span>
+          </div>
+          <div class="wf-search">Search events and venues</div>
+          <div class="wf-filters">
+            <span>Today</span>
+            <span>Category</span>
+            <span>Price</span>
+          </div>
+          <div class="wf-map">
+            <span class="wf-pin wf-pin-one">1</span>
+            <span class="wf-pin wf-pin-two">2</span>
+            <span class="wf-pin wf-pin-three">3</span>
+          </div>
+          <div class="wf-result">
+            <div class="wf-result-image"></div>
+            <div>
+              <strong>Event name</strong>
+              <span>Venue · Date · Time</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wf-problem">
+        <div class="wf-container wf-problem-grid">
+          <div>
+            <p class="wf-label">The problem</p>
+            <h2>Local plans are scattered across too many places.</h2>
+          </div>
+          <p>People currently move between social media, venue pages, messages, and search results. Avenue gives that journey one clear starting point.</p>
+        </div>
+      </section>
+
+      <section class="wf-sneak-peek wf-container" id="product-sneak-peek">
+        <div class="wf-sneak-heading">
+          <div>
+            <p class="wf-label">Product sneak peek</p>
+            <h2>A simpler way to find what is happening.</h2>
+          </div>
+          <p>Avenue is being built around the few things that matter when you are making a plan.</p>
+        </div>
+
+        <div class="wf-feature-cards">
+          <article class="wf-feature-card">
+            <div class="wf-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="m4 6 5-2 6 2 5-2v14l-5 2-6-2-5 2V6Z"></path>
+                <path d="M9 4v14M15 6v14"></path>
               </svg>
-              <span><small>Coming soon to the</small>App Store</span>
-            </a>
-            <span class="launch-note">Made for Limassol<br>Launching on iPhone</span>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" aria-label="Preview of the Avenue app">
-          <div class="sun-shape"></div>
-          <div class="phone phone-main">
-            <div class="phone-screen map-screen">
-              <div class="status-bar"><b>9:41</b><span>● ● ◢</span></div>
-              <div class="app-topbar">
-                <div class="mini-logo">avenue</div>
-                <div class="avatar">M</div>
-              </div>
-              <div class="search-pill">
-                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
-                Search Limassol
-              </div>
-              <div class="filter-pills">
-                <span class="active">All</span><span>Music</span><span>Food</span>
-              </div>
-              <div class="map-art">
-                <div class="road r1"></div><div class="road r2"></div><div class="road r3"></div>
-                <div class="road r4"></div><div class="sea"></div>
-                <span class="map-label old-town">Old Town</span>
-                <span class="map-label marina">Marina</span>
-                <span class="pin p1">♪</span><span class="pin p2">●</span>
-                <span class="pin venue-pin p3">◆</span><span class="pin p4">✦</span>
-              </div>
-              <div class="event-preview">
-                <div class="event-thumb"></div>
-                <div>
-                  <small>FOOD &amp; DRINK</small>
-                  <strong>Limassol Wine Festival</strong>
-                  <span>Today · 19:00</span>
-                </div>
-              </div>
-              <div class="app-tabs"><span class="selected">⌖<small>Explore</small></span><span>＋<small>Submit</small></span><span>♡<small>Saved</small></span></div>
             </div>
-          </div>
-          <div class="floating-card card-one">
-            <span class="floating-icon">♪</span>
-            <div><small>TONIGHT</small><b>Live music</b><span>12 events nearby</span></div>
-          </div>
-          <div class="floating-card card-two">
-            <span class="floating-icon dark">♡</span>
-            <div><small>SAVED</small><b>Your weekend</b><span>4 plans ready</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="city-strip" aria-label="Avenue introduction">
-        <p>One city</p><span>✦</span><p>Every possibility</p><span>✦</span><p>Always something new</p>
-      </section>
-
-      <section id="how-it-works" class="features section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Your city, your way</p>
-          <h2>Less searching.<br><em>More living.</em></h2>
-          <p>Avenue puts Limassol’s best moments in your pocket, so you can spend less time deciding and more time doing.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="feature-number">01</span>
-            <div class="feature-icon icon-map"><span></span><i></i><b></b></div>
-            <h3>Explore</h3>
-            <p>See what’s happening around you on a map built for spontaneous plans.</p>
+            <span class="wf-feature-number">01</span>
+            <h3>See the city at a glance</h3>
+            <p>Explore events and venues on one map instead of searching across different apps.</p>
           </article>
-          <article class="feature-card reveal">
-            <span class="feature-number">02</span>
-            <div class="feature-icon icon-heart">♡</div>
-            <h3>Save</h3>
-            <p>Keep the events you love in one place and make your weekend easy.</p>
+
+          <article class="wf-feature-card">
+            <div class="wf-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 4h14v16l-7-4-7 4V4Z"></path>
+              </svg>
+            </div>
+            <span class="wf-feature-number">02</span>
+            <h3>Keep the good options</h3>
+            <p>Save promising events as you browse, so your next plan is ready when you are.</p>
           </article>
-          <article class="feature-card reveal">
-            <span class="feature-number">03</span>
-            <div class="feature-icon icon-follow">◎</div>
-            <h3>Follow</h3>
-            <p>Stay close to your favourite venues and never miss what they’re planning.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-number">04</span>
-            <div class="feature-icon icon-submit">＋</div>
-            <h3>Submit</h3>
-            <p>Found something worth sharing? Add an event and help the city discover it.</p>
+
+          <article class="wf-feature-card">
+            <div class="wf-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3.5" y="5" width="17" height="15" rx="2"></rect>
+                <path d="M8 3v4M16 3v4M3.5 9.5h17"></path>
+                <path d="m9 15 2 2 4-5"></path>
+              </svg>
+            </div>
+            <span class="wf-feature-number">03</span>
+            <h3>Choose with confidence</h3>
+            <p>See the time, place, price, and essential details before deciding where to go.</p>
           </article>
         </div>
       </section>
 
-      <section class="screens-section">
-        <div class="screens-copy section-heading reveal">
-          <p class="eyebrow light">Made for discovery</p>
-          <h2>Limassol looks<br>good from here.</h2>
+      <section class="wf-flow wf-container">
+        <div class="wf-section-heading">
+          <p class="wf-label">Core user flow</p>
+          <h2>From “what should we do?” to a clear plan.</h2>
         </div>
-        <div class="phone-gallery reveal">
-          <div class="phone gallery-phone tilted-left">
-            <div class="phone-screen list-screen">
-              <div class="status-bar"><b>9:41</b><span>● ● ◢</span></div>
-              <p class="screen-kicker">THIS WEEK</p>
-              <h4>Things to do</h4>
-              <div class="small-chips"><span>All</span><span>Music</span><span>Art</span></div>
-              <div class="list-card lc-one"><div></div><p><small>FRI 12 JUN</small><b>Sunset Sessions</b><span>Marina Beach Bar</span></p></div>
-              <div class="list-card lc-two"><div></div><p><small>SAT 13 JUN</small><b>Old Town Market</b><span>Saripolou Square</span></p></div>
-              <div class="list-card lc-three"><div></div><p><small>SUN 14 JUN</small><b>Open Air Cinema</b><span>Molossi Promenade</span></p></div>
-            </div>
-          </div>
-          <div class="phone gallery-phone center-phone">
-            <div class="phone-screen detail-screen">
-              <div class="detail-image"><div class="status-bar white"><b>9:41</b><span>● ● ◢</span></div><span class="back">‹</span><span class="save">♡</span></div>
-              <div class="detail-content">
-                <small class="category">MUSIC</small>
-                <h4>Sunset Sessions</h4>
-                <p class="detail-meta">Friday, 12 June · 19:30</p>
-                <p class="detail-meta">Marina Beach Bar, Limassol</p>
-                <hr>
-                <b>About this event</b>
-                <p>Golden hour, local DJs, and the Mediterranean at your feet.</p>
-                <button type="button">Save event</button>
-              </div>
-            </div>
-          </div>
-          <div class="phone gallery-phone tilted-right">
-            <div class="phone-screen venue-screen">
-              <div class="venue-cover"><div class="status-bar white"><b>9:41</b><span>● ● ◢</span></div></div>
-              <div class="venue-content">
-                <div class="venue-title"><div><small>VENUE</small><h4>Rialto Theatre</h4></div><button type="button">Follow</button></div>
-                <p>Arts, theatre and culture in the heart of Limassol.</p>
-                <hr>
-                <b>Coming up</b>
-                <div class="mini-event"><span>18<br><small>JUN</small></span><p><b>Contemporary Dance</b><small>20:30</small></p></div>
-                <div class="mini-event"><span>24<br><small>JUN</small></span><p><b>Summer Jazz Night</b><small>21:00</small></p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="mockup-note">App previews shown for illustration. Final screens may vary.</p>
+
+        <ol class="wf-steps">
+          <li>
+            <span class="wf-step-number">01</span>
+            <h3>Open the map</h3>
+            <p>See events and venues around Limassol in one view.</p>
+          </li>
+          <li>
+            <span class="wf-step-number">02</span>
+            <h3>Narrow the options</h3>
+            <p>Use simple filters for date, category, and price.</p>
+          </li>
+          <li>
+            <span class="wf-step-number">03</span>
+            <h3>Choose a plan</h3>
+            <p>Open the details, save the event, and know where to go.</p>
+          </li>
+        </ol>
       </section>
 
-      <section id="for-venues" class="venues section">
-        <div class="venue-photo reveal">
-          <div class="venue-photo-label"><span>For the places<br>that make the city</span></div>
-        </div>
-        <div class="venue-copy reveal">
-          <p class="eyebrow">For venues &amp; organisers</p>
-          <h2>Put your place<br><em>on the map.</em></h2>
-          <p>Reach people who are already looking for their next plan. List your venue, share upcoming events, and build a local following.</p>
-          <ul>
-            <li><span>01</span> Be discovered by locals and visitors</li>
-            <li><span>02</span> Share events in minutes</li>
-            <li><span>03</span> Grow a community around your venue</li>
+      <section class="wf-proof">
+        <div class="wf-container wf-proof-grid">
+          <div class="wf-proof-copy">
+            <p class="wf-label">What the first version must do</p>
+            <h2>Make discovery faster and decisions easier.</h2>
+          </div>
+          <ul class="wf-requirements">
+            <li><span>01</span> Show useful local events and venues</li>
+            <li><span>02</span> Make location and timing obvious</li>
+            <li><span>03</span> Keep filtering understandable</li>
+            <li><span>04</span> Let people save promising plans</li>
           </ul>
-          <a class="text-link" href="mailto:info@avenuecy.com?subject=List%20my%20venue%20on%20Avenue">List your venue <span>↗</span></a>
         </div>
       </section>
 
-      <section id="contact" class="final-cta">
-        <div class="final-cta-inner reveal">
-          <p class="eyebrow light">The city is waiting</p>
-          <h2>Find your next<br><em>favourite plan.</em></h2>
-          <a class="app-store-button light-button" href="mailto:info@avenuecy.com?subject=Avenue%20app%20launch">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.7 12.8c0-3.2 2.6-4.7 2.7-4.8a5.8 5.8 0 0 0-4.6-2.5c-2-.2-3.8 1.2-4.8 1.2-1 0-2.5-1.2-4.2-1.1A6.1 6.1 0 0 0 2.6 8.7c-2.2 3.8-.6 9.4 1.6 12.4 1.1 1.5 2.3 3.1 3.9 3 1.6-.1 2.2-1 4.1-1s2.5 1 4.2 1c1.7 0 2.8-1.5 3.8-3a13.5 13.5 0 0 0 1.7-3.5 5.4 5.4 0 0 1-3.2-4.8ZM15.5 3.4A5.4 5.4 0 0 0 16.8-.5a5.5 5.5 0 0 0-3.6 1.9 5.2 5.2 0 0 0-1.3 3.7 4.6 4.6 0 0 0 3.6-1.7Z" transform="scale(.82) translate(2.2 1.2)"/></svg>
-            <span><small>Coming soon to the</small>App Store</span>
-          </a>
-          <p class="contact-line">Questions, ideas, or a great event? <a href="mailto:info@avenuecy.com">info@avenuecy.com</a></p>
-        </div>
+      <section class="wf-final wf-container">
+        <p class="wf-label">Avenue is coming soon</p>
+        <h2>Be first to explore Limassol with Avenue.</h2>
+        <p>Join the launch list for one update when the app is ready.</p>
+        <a class="wf-button" href="mailto:info@avenuecy.com?subject=Avenue%20app%20launch">Join the launch list</a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <a class="brand footer-brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span>avenue</span></a>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="support.html">Support</a>
-        <a href="delete-account.html">Delete account</a>
+    <footer class="wf-footer">
+      <div class="wf-container">
+        <span>© 2026 Avenue</span>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="support.html">Support</a>
+        </nav>
       </div>
-      <p>© <span id="current-year">2026</span> Avenue. Made in Limassol.</p>
     </footer>
   </body>
 </html>

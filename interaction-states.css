@@ -1,0 +1,25 @@
+.wf-states-page { min-height: 100vh; padding: 80px 0; }
+.wf-states-header { max-width: 720px; margin-bottom: 64px; }
+.wf-states-header h1 { margin: 0 0 16px; font-size: 48px; line-height: 1; letter-spacing: -3px; }
+.wf-states-header p { margin: 0; color: var(--gray-700); font-size: 16px; line-height: 1.65; }
+.wf-state-group { margin-bottom: 64px; }
+.wf-state-group h2 { margin: 0 0 24px; font-size: 24px; }
+.wf-state-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.wf-state-card { min-height: 150px; padding: 24px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; background: var(--gray-100); border: 1px solid var(--gray-300); }
+.wf-state-card > span { color: var(--gray-500); font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.wf-button-state-hover { background: var(--gray-900); border-color: var(--gray-900); transform: translateY(-2px); }
+.wf-button-state-active { background: #000000; border-color: #000000; transform: translateY(1px) scale(.98); }
+.wf-button-state-focus { outline: 3px solid var(--black); outline-offset: 4px; }
+.wf-link-state-hover { color: var(--black); text-decoration-color: currentColor; }
+.wf-link-state-active { color: var(--black); font-weight: 700; text-decoration-color: currentColor; text-decoration-thickness: 2px; }
+.wf-link-state-focus { outline: 3px solid var(--black); outline-offset: 4px; }
+
+@media (max-width: 800px) {
+  .wf-state-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 520px) {
+  .wf-states-page { padding: 56px 0; }
+  .wf-states-header h1 { font-size: 40px; }
+  .wf-state-grid { grid-template-columns: 1fr; }
+}
