@@ -1,286 +1,305 @@
-# Avenue App Visual Audit
+# Avenue Landing Page Communication Audit
 
-Sources:
+Status: Approved direction for the MVP landing page
+Scope: Purpose, information hierarchy, visual support, and CTA logic
 
-- `IMG_1130.PNG`: Explore map and event preview
-- `IMG_1133.PNG`: Event management list
+## Strategic Decision
 
-Status: Proposed app-derived landing-page style guide  
-Method: Values are inferred from 3x iPhone screenshots and normalized to CSS-like points. Exact source design files may differ by 1–3px or by minor color-rendering variation.
+The website does not need to look or behave like an extension of the Avenue app.
 
-## Executive Summary
+Its MVP job is narrower:
 
-The app’s visual identity is defined by:
+1. Explain what Avenue is.
+2. Explain why it is useful in Limassol.
+3. Show what a visitor will be able to do with it.
+4. Give interested visitors one obvious next action.
 
-- Near-black navy typography rather than dark teal typography
-- Warm off-white page backgrounds
-- White cards with thin warm-gray borders
-- Muted teal as the primary interactive color
-- Orange used only for status and small accents
-- Large, friendly radii with very limited shadow depth
-- One geometric sans-serif with bold headings and restrained body copy
+Visual similarity to the product is secondary. App screenshots, map treatments, interface cards, and product-specific interaction patterns should only appear when they make the purpose easier to understand.
 
-The landing page should inherit this system through surfaces, controls, cards, and hierarchy. It should not reproduce the density of the mobile screens or import the map’s category colors into marketing sections.
+## Primary Audience
 
-## Observed Color System
+The first landing page is written primarily for people in Limassol looking for something to do.
 
-### Core product colors
+The page should answer these questions in order:
 
-| Token | Observed value | Proposed canonical value | Use |
+- What is Avenue?
+- Is it relevant to me and my city?
+- What problem does it solve?
+- What will I be able to do with it?
+- Is it available yet?
+- What should I do next?
+
+Venue owners, event organisers, and potential partners are valid future audiences, but they should not compete with the consumer message or primary CTA in the MVP.
+
+## Core Message
+
+### One-sentence proposition
+
+**Avenue helps people discover events and venues across Limassol in one place.**
+
+### Supporting promise
+
+Visitors should understand that Avenue reduces the need to search across social media, venue pages, messages, and unrelated listings.
+
+### Desired visitor takeaway
+
+> When I want to make a plan in Limassol, Avenue will give me one clear place to start.
+
+Every section should strengthen this takeaway. Content that does not improve understanding, trust, or conversion should be removed.
+
+## CTA Strategy
+
+### Primary conversion
+
+The only primary conversion is:
+
+**Join the launch list**
+
+This exact label should be used in:
+
+1. The header
+2. The hero
+3. The final CTA section
+
+All three instances must lead to the same destination and set the same expectation.
+
+### CTA expectation
+
+The supporting copy should explain:
+
+- Avenue is coming soon to iPhone.
+- Joining means receiving a launch notification or a very small number of relevant launch updates.
+- The visitor will not receive ongoing promotional spam.
+
+Recommended microcopy:
+
+**Coming soon to iPhone. Join for one launch update.**
+
+### CTA hierarchy
+
+- Use one filled primary button style throughout the page.
+- Do not introduce another filled action such as “Learn more,” “View demo,” or “Explore events.”
+- In-page navigation may use text links, but it must remain visually subordinate.
+- Legal, support, and contact links belong in the footer and are not conversion actions.
+- A future organiser or venue CTA should live on a separate page or clearly secondary route.
+
+### CTA destination
+
+A short email field and submit button is the preferred final implementation because it keeps the visitor on the page and makes the action explicit.
+
+The current `mailto:` link is acceptable only as a temporary wireframe mechanism. Before launch, replace it with a real launch-list form or a clearly explained external signup destination. Do not imply that a visitor has joined until a submission has succeeded.
+
+### CTA success state
+
+After submission, show a concise confirmation:
+
+**You’re on the list. We’ll let you know when Avenue launches.**
+
+Do not redirect the visitor to an unrelated page.
+
+## Information Architecture
+
+### 1. Header
+
+Purpose:
+
+- Identify Avenue.
+- Keep the primary action available.
+
+Content:
+
+- Avenue logo and wordmark
+- “Join the launch list” button
+
+Avoid a full navigation menu for the MVP. The page is short and has one conversion goal.
+
+### 2. Hero
+
+Purpose:
+
+- Establish what Avenue does, where it works, and why it matters.
+
+Recommended hierarchy:
+
+- Eyebrow: `Event and venue discovery for Limassol`
+- Headline: `Find a plan without searching everywhere.`
+- Supporting copy: Avenue brings local events and venues into one clear place so people can decide where to go.
+- Primary CTA
+- Availability and privacy microcopy
+
+The hero should be content-led. A visual may support the message, but it must not require visitors to interpret a product interface before understanding the proposition.
+
+Suitable hero support:
+
+- A simple editorial illustration of scattered sources becoming one clear destination
+- A restrained Limassol/location motif
+- A compact information panel summarising `Events`, `Venues`, and `One place to start`
+- No visual at all if the copy is stronger without one
+
+Avoid:
+
+- A large app screenshot as the main message
+- A fake interactive map
+- Feature-heavy interface chrome
+- Decorative visuals that compete with the CTA
+
+### 3. Problem
+
+Purpose:
+
+- Confirm that Avenue addresses a familiar local frustration.
+
+Message:
+
+**Local plans are scattered across too many places.**
+
+Keep this section short. It should create recognition, not over-explain the market.
+
+### 4. What Avenue Helps You Do
+
+Purpose:
+
+- Turn the proposition into three concrete benefits.
+
+Recommended benefits:
+
+1. Discover local events and venues
+2. Narrow the options using useful details
+3. Save promising plans for later
+
+Use benefit-led language. Interface terminology such as annotations, segmented controls, sheets, or tabs does not belong in the marketing copy.
+
+### 5. How It Works
+
+Purpose:
+
+- Make the future experience easy to picture.
+
+Sequence:
+
+1. Open Avenue
+2. Find options that fit
+3. Choose where to go
+
+This can be a compact numbered sequence. It does not need to reproduce app screens.
+
+### 6. MVP Promise
+
+Purpose:
+
+- Establish trust by being specific about the first release.
+
+The first version should promise:
+
+- Useful events and venues in Limassol
+- Clear location and timing information
+- Understandable filters
+- The ability to save plans
+
+Do not advertise incomplete features such as Near Me, advanced date filtering, or organiser tools as available.
+
+### 7. Final CTA
+
+Purpose:
+
+- Convert visitors who now understand the product.
+
+Content:
+
+- `Avenue is coming soon`
+- `Be first to know when Avenue launches in Limassol.`
+- One sentence setting the email expectation
+- The same launch-list action used in the hero
+
+The section should feel conclusive, not introduce new product information.
+
+### 8. Footer
+
+Include:
+
+- Copyright
+- Privacy
+- Terms
+- Support
+- Contact where appropriate
+
+Keep footer links visually separate from the primary CTA.
+
+## Visual Direction
+
+The visual system should support reading and decision-making rather than imitate the app.
+
+### Principles
+
+- High contrast
+- Generous whitespace
+- Clear section boundaries
+- Strong typographic hierarchy
+- Limited decoration
+- One dominant action color
+- Consistent button treatment
+
+### Color
+
+Use a restrained website palette:
+
+- Near-black or deep navy for headings
+- White and one subtle neutral for section backgrounds
+- Dark teal for the primary CTA and important highlights
+- Orange only as a small brand accent when it has a clear purpose
+
+No section requires app category colors, map-marker colors, or status colors.
+
+### Typography
+
+Use a system UI font stack for speed and clarity. The display scale should be confident but not so large that it pushes the proposition or CTA below the fold.
+
+| Role | Desktop | Mobile | Use |
 | --- | --- | --- | --- |
-| `app-ink` | `#1A1A2C` to `#0C0C15` | `#1A1A2E` | Headings, icons, high-emphasis text |
-| `app-teal` | `#489C8F` to `#53B5A8` | `#4A9D91` | Primary controls, selected states, icons |
-| `app-orange` | `#CC7C2D` to `#D76636` | `#E95D24` | Pending states, alerts, small accents |
+| Display | `64px / 68px` | `44px / 48px` | Hero headline |
+| H2 | `44px / 48px` | `34px / 39px` | Main section headings |
+| H3 | `24px / 30px` | `22px / 28px` | Benefits and steps |
+| Lead | `18px / 29px` | `17px / 27px` | Hero and section introductions |
+| Body | `16px / 26px` | `16px / 26px` | Standard copy |
+| Label | `13px / 18px` | `13px / 18px` | Buttons and compact metadata |
 
-The three core colors should remain the only chromatic brand colors on the landing page.
+### Surfaces and depth
 
-For small white button text, use the accessible teal tone `#397C72` (`4.88:1` contrast). This is a darker tonal variant of `app-teal`, not an additional brand color. The observed `#4A9D91` remains appropriate for large icons, selected backgrounds, and non-text UI.
+- Prefer flat sections and thin borders.
+- Use cards only when they improve scanning or group related information.
+- Use a maximum of one subtle shadow treatment.
+- Do not make every section a rounded panel.
+- Product-style floating controls are unnecessary.
 
-### Surface and text neutrals
+### Imagery
 
-| Token | Observed value | Proposed value | Use |
-| --- | --- | --- | --- |
-| `surface-page` | `#F7F5F0` to `#F9F8F5` | `#F8F5F0` | Main warm page background |
-| `surface-card` | `#FFFFFF` | `#FFFFFE` | Cards, controls, navigation surfaces |
-| `surface-teal-soft` | approximately `#E4F2EF` | `#E4F2EF` | Selected tags, approved states |
-| `surface-orange-soft` | approximately `#F8EBDD` | `#FEEBE6` | Pending tags, orange accents |
-| `text-secondary` | `#605F5F` to `#787C81` | `#666762` | Body text and metadata |
-| `text-muted` | `#9F9F9F` | `#8B8D88` | Placeholder and low-emphasis text |
-| `border-subtle` | approximately `#E5E2DC` | `#E5E2DC` | Card and control outlines |
+Imagery is optional for the MVP.
 
-### Color application
+If included, it must pass this test:
 
-- Use `app-ink` for primary headings. This is a key app characteristic.
-- Use `app-teal` for the primary CTA, active navigation, icons, and selected controls.
-- Use `app-orange` for no more than 10% of a section’s colored elements.
-- Use warm surfaces instead of pure cool gray.
-- Do not use category-map colors as general landing-page decoration.
-- Avoid gradients. The app relies on flat fills and surface contrast.
+> Does this image help a first-time visitor understand Avenue faster?
 
-## Border Radius
+One lightweight visual is preferable to a gallery of app screenshots. Product screenshots may appear below the core explanation later, but they are not required for launch.
 
-The source screenshots are 1290px wide, equivalent to approximately 430 logical points at 3x density.
+## Content Rules
 
-| Component type | Observed logical radius | Proposed web token |
-| --- | --- | --- |
-| Small icon button | `14–16px` | `radius-control: 16px` |
-| Filter chip / status pill | Fully rounded | `radius-pill: 999px` |
-| Search field / segmented control | `22–26px` | `radius-field: 24px` |
-| Standard event or metric card | `16–20px` | `radius-card: 20px` |
-| Large preview / bottom sheet | `28–34px` | `radius-panel: 32px` |
-| Bottom navigation surface | `26–30px` | `radius-navigation: 28px` |
+- Lead with visitor outcomes, not implementation details.
+- Use “events and venues” consistently.
+- Mention Limassol above the fold.
+- Keep paragraphs to two or three sentences.
+- Avoid unsupported claims such as “all events,” “the best events,” or “everything happening.”
+- Do not describe features that are not part of the MVP.
+- Use the same CTA wording everywhere.
+- Place reassurance immediately beside the CTA, not in a distant FAQ.
 
-### Radius rules
+## MVP Release Test
 
-- Controls should feel more rounded than the current wireframe’s `6–8px`.
-- Use four radius levels only: `16px`, `20px`, `24px`, and `32px`, plus pills.
-- Parent containers must have a larger radius than nested controls.
-- Avoid mixing square cards with highly rounded buttons in the same component.
-- Do not round full-page sections; reserve radii for contained surfaces.
+The landing page is ready when a first-time visitor can answer the following after ten seconds:
 
-## Border and Shadow Depth
+1. Avenue helps me find events and venues.
+2. It is focused on Limassol.
+3. It is not available yet.
+4. I can join the launch list.
+5. Joining has a clear and limited email expectation.
 
-The app uses borders more often than shadows. Depth is shallow and functional.
-
-### Observed hierarchy
-
-1. **Flat controls:** white fill plus a thin warm-gray border
-2. **Cards:** white fill, thin border, minimal ambient shadow
-3. **Floating surfaces:** search bar, preview sheet, and bottom navigation use a slightly stronger shadow
-
-### Proposed shadow tokens
-
-```css
---border-subtle: 1px solid #e5e2dc;
-
---shadow-card:
-  0 2px 8px rgba(26, 26, 46, 0.04);
-
---shadow-control:
-  0 4px 14px rgba(26, 26, 46, 0.06);
-
---shadow-floating:
-  0 12px 32px rgba(26, 26, 46, 0.10);
-```
-
-### Shadow rules
-
-- Default cards use `shadow-card`, not `shadow-floating`.
-- Buttons should not have a permanent shadow.
-- Use `shadow-control` for search fields and raised navigation controls.
-- Reserve `shadow-floating` for one hero product panel or a genuinely floating surface.
-- Never stack multiple strong shadows in one viewport.
-- Borders must remain visible when shadows are removed or unavailable.
-
-## Typography Audit
-
-The app appears to use one geometric sans-serif family, visually closest to SF Pro or a similar rounded grotesk. For the website, use the system UI stack first; it aligns closely with the iOS screenshots and avoids a font download.
-
-### Observed mobile scale
-
-| Role | Approximate app size | Weight | Characteristics |
-| --- | --- | --- | --- |
-| Screen title | `28–32px` | 700 | Tight tracking, near-black |
-| Section title | `20–22px` | 700 | Strong grouping label |
-| Card title | `18–20px` | 700 | One or two lines maximum |
-| Control label | `15–17px` | 600–700 | Bold, direct |
-| Body / metadata | `14–16px` | 400–500 | Medium gray |
-| Chip / status | `13–15px` | 600–700 | Compact and legible |
-| Micro label | `11–12px` | 700 | Uppercase where appropriate |
-
-### Proposed landing-page scale
-
-The website needs larger display sizes while preserving the app’s ratios and weight contrast.
-
-| Token | Desktop | Mobile | Weight | Use |
-| --- | --- | --- | --- | --- |
-| `type-display` | `64px / 68px` | `48px / 52px` | 700 | Hero headline |
-| `type-h2` | `44px / 48px` | `36px / 40px` | 700 | Major sections |
-| `type-h3` | `24px / 30px` | `22px / 28px` | 700 | Cards and flow steps |
-| `type-body-lg` | `18px / 29px` | `17px / 27px` | 400 | Hero and section introductions |
-| `type-body` | `16px / 26px` | `16px / 26px` | 400 | Standard copy |
-| `type-label` | `13px / 18px` | `13px / 18px` | 700 | Buttons, chips, metadata |
-| `type-eyebrow` | `12px / 16px` | `12px / 16px` | 700 | Uppercase section label |
-
-### Typography rules
-
-- Use one family only.
-- Use weight 700 for headings and key controls.
-- Use color and spacing, not extra font families, to create hierarchy.
-- Keep display letter spacing between `-0.03em` and `-0.04em`.
-- Keep body tracking at `0`.
-- Headings should use `app-ink`; teal headings are not characteristic of the screenshots.
-- Metadata should remain secondary and never compete with card titles.
-
-## Spacing and Density
-
-The app is dense but orderly. The website should adopt the rhythm, not the mobile density.
-
-### Proposed spacing scale
-
-```css
---space-1: 8px;
---space-2: 16px;
---space-3: 24px;
---space-4: 32px;
---space-6: 48px;
---space-8: 64px;
---space-12: 96px;
-```
-
-### Application
-
-- `8px`: icon-to-label and chip internals
-- `16px`: related text and compact controls
-- `24px`: card padding and component groups
-- `32px`: larger card padding and heading-to-body spacing
-- `48px`: separation within a section
-- `64px`: mobile section boundaries
-- `96px`: desktop section boundaries
-
-The screenshots consistently show generous outer gutters with compact internal group spacing.
-
-## Landing-Page Component Mapping
-
-### Header
-
-- White or warm-white surface
-- `app-ink` navigation text
-- Teal primary CTA
-- `16px` control radius
-- Thin bottom border; no heavy shadow
-
-### Hero
-
-- Warm page background
-- `app-ink` headline
-- One white product-preview card with `32px` radius
-- Teal CTA
-- At most one `shadow-floating` surface
-- Orange limited to one small status cue
-
-### Core User Flow
-
-- Replace hard grayscale dividers with white cards on warm background
-- Cards use `20px` radius, subtle border, and `shadow-card`
-- Step numbers sit in soft-teal pills or icon containers
-- Preserve the current three-step content hierarchy
-
-### Proof / Requirements
-
-- Use `app-ink` as the dark section background
-- White primary text and muted warm-gray secondary text
-- Teal check or status icons
-- Avoid orange unless a warning or pending concept is present
-
-### Final CTA
-
-- White card or warm surface rather than a decorative full-bleed gradient
-- `32px` panel radius
-- Teal primary button
-- Large `app-ink` headline
-- One clear action
-
-## Proposed CSS Token Set
-
-```css
-:root {
-  --color-ink: #1a1a2e;
-  --color-teal: #4a9d91;
-  --color-teal-action: #397c72;
-  --color-orange: #e95d24;
-
-  --color-page: #f8f5f0;
-  --color-surface: #fffffe;
-  --color-teal-soft: #e4f2ef;
-  --color-orange-soft: #feebe6;
-  --color-text-secondary: #666762;
-  --color-text-muted: #8b8d88;
-  --color-border: #e5e2dc;
-
-  --radius-control: 16px;
-  --radius-card: 20px;
-  --radius-field: 24px;
-  --radius-panel: 32px;
-  --radius-pill: 999px;
-
-  --shadow-card: 0 2px 8px rgba(26, 26, 46, 0.04);
-  --shadow-control: 0 4px 14px rgba(26, 26, 46, 0.06);
-  --shadow-floating: 0 12px 32px rgba(26, 26, 46, 0.10);
-
-  --font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
-
-  --type-display: 700 64px/68px var(--font-family);
-  --type-h2: 700 44px/48px var(--font-family);
-  --type-h3: 700 24px/30px var(--font-family);
-  --type-body-lg: 400 18px/29px var(--font-family);
-  --type-body: 400 16px/26px var(--font-family);
-  --type-label: 700 13px/18px var(--font-family);
-}
-```
-
-## Key Differences From the Current Wireframe
-
-| Current wireframe | App-derived direction |
-| --- | --- |
-| Pure white and cool grayscale | Warm off-white and white layered surfaces |
-| `6–8px` control radii | `16–24px` control radii |
-| Flat divided sections | Contained cards with subtle borders |
-| Black CTA | Muted teal CTA |
-| System-gray headings | Near-black navy headings |
-| No shadows | Very shallow functional shadows |
-| Abstract map wireframe only | One controlled real-product preview when imagery is approved |
-
-## Recommendation
-
-Apply the style guide in this order:
-
-1. Color and typography tokens
-2. Radius and border system
-3. Card surfaces
-4. Button and interaction states
-5. One optimized product screenshot
-6. Shadows last
-
-This sequence preserves the approved hierarchy and user flow while making the landing page feel like the same product as the app.
+If the visual design is memorable but any of these points are unclear, the page has failed its primary purpose.

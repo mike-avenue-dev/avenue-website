@@ -1,7 +1,13 @@
 # Avenue Landing Page Performance Strategy
 
-Status: Wireframe baseline  
+Status: Information-first MVP baseline
 Primary target: interactive in under 2 seconds on a mid-range mobile device over a typical 4G connection
+
+## Product Communication Priority
+
+Performance supports the landing page's communication goal. Visitors must receive the proposition, Limassol context, launch status, and primary CTA directly in the initial HTML.
+
+The page must not require JavaScript, a product screenshot, a map, or an animation to explain what Avenue does.
 
 ## Current Loading Model
 
@@ -9,13 +15,15 @@ The landing page is intentionally static:
 
 - Plain HTML
 - One production CSS file
-- No JavaScript
+- No JavaScript in the current wireframe
 - No framework or component library
 - No external font request
 - One small visible image: the Avenue logo
 - No screenshots, video, map SDK, analytics, or third-party embeds
 
 Because the page has no client-side application boot process, it becomes interactive as soon as the HTML is parsed. CSS affects rendering but does not block interaction setup through JavaScript.
+
+The preferred launch-list implementation is a small accessible HTML form. If its submission provider requires JavaScript, the script must be deferred, remain within the budget below, and preserve a functional fallback.
 
 ## Performance Budget
 
@@ -59,7 +67,7 @@ Rules for future imagery:
 - Always include image dimensions or `aspect-ratio`.
 - Do not add autoplay video, animated GIFs, or background video to the landing page.
 
-The existing app screenshots are design references. They are not part of the wireframe payload.
+The existing app screenshots are optional evidence, not required landing-page content. Add one only if user testing shows that it improves understanding more than equivalent text.
 
 ### 2. Fonts
 
@@ -90,7 +98,7 @@ Current priority:
 - No carousel.
 - No map SDK.
 - No client-side form framework.
-- No JavaScript on the production landing page.
+- Zero initial JavaScript is preferred; a small deferred form-submission script is allowed when a native submission is not practical.
 
 Allowed additions must prove a user-facing requirement that HTML and CSS cannot meet. Any new script requires:
 
@@ -102,6 +110,14 @@ Allowed additions must prove a user-facing requirement that HTML and CSS cannot 
 
 Analytics, chat, heatmaps, and consent tools must not load before consent and must not enter the critical rendering path.
 
+For the launch-list form:
+
+- Prefer a native HTML submission.
+- Request only an email address.
+- Do not load a general marketing SDK for one field.
+- Show a real success or error state; never imply success before the provider confirms submission.
+- Do not block the page while the form provider loads.
+
 ## What We Trimmed
 
 - Removed the Google Fonts `@import`.
@@ -111,11 +127,13 @@ Analytics, chat, heatmaps, and consent tools must not load before consent and mu
 - Moved interaction-specimen CSS out of the production landing-page stylesheet.
 - Kept app screenshots off the production landing page.
 - Avoided scroll animation and Intersection Observer code.
+- Kept the proposition and CTA as HTML text rather than embedding them in an image.
 
 ## Rendering Rules
 
 - Keep the top of the page server-rendered/static.
 - Put essential content directly in HTML.
+- Keep the hero proposition, Limassol context, CTA label, and CTA reassurance in the first HTML response.
 - Do not hide initial content pending JavaScript.
 - Avoid CSS that triggers large layout shifts after load.
 - Use CSS Grid and Flexbox without layout-measuring scripts.
@@ -133,10 +151,12 @@ Before release:
 1. Run Lighthouse mobile in an incognito profile.
 2. Test with simulated mobile throttling and a mid-tier device profile.
 3. Confirm no third-party requests in the network panel.
-4. Confirm the initial page has no JavaScript request.
+4. Confirm there is no JavaScript request unless the launch-list submission requires one.
 5. Confirm the LCP asset is not lazy-loaded.
 6. Confirm all images have fixed dimensions.
 7. Confirm transferred payload and request counts stay within budget.
 8. Test once on a real iPhone over cellular data.
+9. Confirm the launch-list action works with JavaScript disabled when a native fallback is promised.
+10. Confirm a failed submission does not display the success message.
 
-Performance is a release criterion. A feature that breaks the budget must be simplified, deferred, or removed.
+Performance and message delivery are release criteria. A feature that delays or obscures the proposition or CTA must be simplified, deferred, or removed.

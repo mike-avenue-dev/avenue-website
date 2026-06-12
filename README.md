@@ -16,7 +16,8 @@ Then open `http://localhost:8080`.
 
 - General contact uses `info@avenuecy.com`, support uses `support@avenuecy.com`, and privacy and deletion requests use `privacy@avenuecy.com`.
 - Replace the “Coming soon” App Store links with the final App Store URL.
-- Replace the illustrated app previews with final screenshots if desired.
+- Keep the landing page information-first; add product imagery only when it makes Avenue's purpose easier to understand.
+- Replace temporary `mailto:` launch-list links with one real signup form or clearly explained signup destination.
 - Have the Privacy Policy and Terms reviewed for the final business entity and app behaviour.
 - Configure the GitHub Pages repository to publish from the `main` branch root.
 - Configure the domain DNS for GitHub Pages and enable HTTPS in repository settings.
