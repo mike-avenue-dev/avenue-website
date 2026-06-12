@@ -207,6 +207,14 @@ img { max-width: 100%; display: block; }
 .privacy-document li::marker { color: var(--teal); }
 .privacy-document [id] { scroll-margin-top: 24px; }
 .privacy-document bdt:empty { display: none; }
+.terms-document section { scroll-margin-top: 24px; }
+.terms-document p { margin: 0 0 18px; }
+.terms-document ul { margin: 0 0 24px; padding-left: 24px; }
+.terms-document li { margin-bottom: 9px; }
+.terms-document .terms-intro [data-custom-class="heading_1"] h2 { margin-top: 44px; }
+.terms-page .privacy-nav { max-height: calc(100vh - 56px); overflow-y: auto; scrollbar-width: thin; }
+.terms-page .privacy-nav nav a { padding: 8px 0; }
+.terms-page .privacy-help { margin-bottom: 18px; }
 .policy-placeholder { padding: 2px 6px; color: #a3421b !important; background: var(--orange-soft); border-radius: 4px; font-weight: 700; }
 .policy-attribution { margin-top: 60px; padding-top: 22px; color: var(--muted); border-top: 1px solid var(--line); font-size: 11px; }
 .back-to-top { width: 44px; height: 44px; position: fixed; right: 24px; bottom: 24px; display: grid; place-items: center; color: var(--white); background: var(--teal); border-radius: 13px; box-shadow: var(--shadow); font-size: 20px; }
